@@ -42,7 +42,7 @@ namespace Snake
                     Body[0].X -= 10;
                     break;
                 case 3:
-                    Body[0].Y += 10;
+                    Body[0].Y -= 10;
                     break;
 
             }

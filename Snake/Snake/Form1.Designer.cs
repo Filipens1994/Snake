@@ -42,20 +42,22 @@
             this.lblMenu.Text = "Snake\r\n\r\nKorzystaj ze strzałek, aby zmieniać kierunek\r\nruchu węża\r\n\r\nUżyj spacji " +
     "do zaytrzymania gry\r\n\r\nNaciśnij Enter by rozpocząć grę\r\n";
             this.lblMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(308, 212);
             this.Controls.Add(this.lblMenu);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(316, 239);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(316, 239);
             this.Name = "Form1";
             this.Text = "Snake - Score: 1";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
